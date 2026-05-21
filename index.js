@@ -1,7 +1,9 @@
 const express = require('express');
 const crypto = require('crypto'); // Módulo nativo do Node para gerar UUID
+const cors = require('cors'); // Middleware para permitir requisições de diferentes origens
 
 const app = express();
+app.use(cors()); // Habilita o CORS para todas as origens
 app.use(express.json()); // Permite que a API receba JSON no body
 
 // Banco de dados em memória (inicia com os exemplos que você passou)
