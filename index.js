@@ -20,10 +20,10 @@ let jogos = [
   },
   {
     id: 2,
-    nome: "FIFA 23",
-    tipo: "Esporte",
+    nome: "Hollow Nitro",
+    tipo: "Esportes Apiários",
     nota: 7,
-    review: "Bom para jogar com amigos."
+    review: "Bom para jogar com amigos e insetos."
   }
 ];
 
