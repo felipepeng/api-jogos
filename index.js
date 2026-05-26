@@ -4,14 +4,8 @@ const cors = require('cors'); // Middleware para permitir requisições de difer
 
 const app = express();
 
-// --- ALTERAÇÃO ---
-// Configuração de CORS mais explícita
-app.use(cors({
-  origin: '*', // Permite qualquer origem
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
-  preflightContinue: false,
-  optionsSuccessStatus: 204
-}));
+// --- CORS---
+app.use(cors()); 
 
 app.use(express.json()); // Permite que a API receba JSON no body
 
